@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ===========navbar======== */
+.navbar-collapse>ul>li>a::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.6s;
+}
+.navbar-collapse>ul>li{
+    position: relative;
+}
+.navbar-collapse>ul>li>a:hover::after,
+.navbar-collapse>ul>li>a.active::after{
+    width: 80%;
+}
+.navbar-collapse>ul>li>a{
+    font-weight: 500;
+}
+nav .navbar-toggler{
+    border: none;
+}
+nav .navbar-brand{
+    font-size: 30px;
+    font-weight: 500;
+}
+header{
+    height: 100vh;
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.header-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.center-content h1{
+    font-size: 55px;
+}
+
+
+
+/* ===========about============ */
+.about-me{
+    background-color: #F5F5F5;
+}
+.about-info ul li{
+    line-height: 40px;
+    font-size: 18px;
+}
+.about-img img{
+    border-radius: 10px;
+}
+.about-content h2::after{
+    content: "";
+    width: 20%;
+    height: 3px;
+    background-color: #5d97ce;
+    position: absolute;
+    top: 45px;
+    left: 0;
+}
+
+
+/* ==========services========= */
+.services{
+    background-color: #F5F5F5;
+}
+.heading p:first-child{
+    font-size: 50px;
+}
+.heading p:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 48%;
+    width: 4%;
+    height: 5px;
+    background-color: #5d97ce;
+}
+
+.icon-border{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 10px solid #0078FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.my-card:hover .icon-border{
+    background-color: #0078FF;
+    border: 10px solid #7da4c9;
+}
+.my-card:hover .icon-border>i{
+    color: white;
+}
+
+
+
+/* ============counter========== */
+.counter{
+    background-image: url(../images/post-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.counter .blue-background{
+    background-color: #0077ff4f;
+    padding: 100px 0 100px 0;
+}
+.counter-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 10px solid #0078FF;
+}
+
+
+
+/* ===========portofolio============ */
+.portofolio{
+    background-color: #F5F5F5;
+}
+.plus{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid;
+}
+.img-width{
+    height: 200px;
+}
+.changable-width{
+    transition: all 0.7s;
+}
+.first-cards:hover .changable-width{
+    transform: scale(1.5);
+}
+.first-travel-span{
+    border-radius: 5px;
+    top: -15px;
+    left: 40%;
+    font-size: 13px;
+}
+.travel-span{
+    border-radius: 5px;
+    top: -15px;
+    left: 35%;
+    font-size: 13px;
+}
+
+
+
+
+/* ===========carousel========== */
+.comments{
+    height: 100vh;
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.blue-overlay{
+    background-color: #0379ffb2;
+    height: 100vh;
+    z-index: 1;
+}
+.height{
+    height: 100vh;
+}
+.carousel-indicators .indicator{
+    height: 10px;
+    width: 10px;
+}
+
+
+
+/* ==========blog======== */
+.blog{
+    background-color: #F5F5F5;
+}
+
+
+
+
+/* ===========contact============ */
+.contact{
+    height: 110vh;
+    background-image: url(../images/overlay-bg.jpg);
+}
+.blue-overlay2{
+    background-color: #0379ffb2;
+    height: 110vh;
+    z-index: 1;
+}
+.blue-after::after{
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    left: 0;
+    bottom: -10px;
+    width: 20%;
+    height: 3px;
+    background-color: #0078FF;
+}
+
+form input{
+    border: 1px solid rgb(201, 197, 197);
+}
+form textarea{
+    height: 150px;
+    border: 1px solid rgb(201, 197, 197);
+    padding: 8px;
+}
+form .form-button{
+    width: 35%;
+}
+.links .links-icon{
+    width: 50px;
+    height: 50px;
+    border: 3px solid #0078FF;
+    border-radius: 50%;
+}
+.footer-overlay{
+    box-shadow: 0 10px 10px #888;
+    background-color: #0062D3;
+}
